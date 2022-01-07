@@ -1,0 +1,59 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.hanson.switchlanguage"
+        minSdkVersion 28
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        hanson{
+            keyAlias 'hanson'
+            keyPassword 'hanson'
+            storeFile file("hanson.keystore")
+            storePassword 'hanson'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+        m9216{
+            keyAlias 'm9216key'
+            keyPassword 'android'
+            storeFile file("m9216.keystore")
+            storePassword 'android'
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.m9216
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion '30.0.3'
+    configurations.all {
+        resolutionStrategy {
+            force 'androidx.core:core:1.6.0'
+        }
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    testImplementation 'junit:junit:+'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}

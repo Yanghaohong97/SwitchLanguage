@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".MainActivity">
+
+<item
+    android:id="@+id/language_english"
+    android:orderInCategory="100"
+    android:title="@string/menu_english" />
+<item
+    android:id="@+id/language_simplified_chinese"
+    android:orderInCategory="100"
+    android:title="@string/menu_simplified_chinese" />
+<item
+    android:id="@+id/language_turkish"
+    android:orderInCategory="100"
+    android:title="@string/menu_turkish" />
+<item
+    android:id="@+id/language_japanese"
+    android:orderInCategory="100"
+    android:title="@string/menu_japanese" />
+
+</menu>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="toolbar_title">标题</string>
+    <string name="title">这是一个简体中文标题</string>
+    <string name="desc">这是一个简体中文描述</string>
+
+</resources>

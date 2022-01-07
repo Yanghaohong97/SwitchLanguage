@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="toolbar_title">タイトル</string>
+    <string name="title">このタイトルは日本語です</string>
+    <string name="desc">これは日本語の説明テキストです</string>
+
+</resources>

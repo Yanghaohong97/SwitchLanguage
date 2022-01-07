@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="toolbar_title">Baslik</string>
+    <string name="title">Bu baslik Turkcedir</string>
+    <string name="desc">Bu aciklama yazisi Turkcedir</string>
+
+</resources>
